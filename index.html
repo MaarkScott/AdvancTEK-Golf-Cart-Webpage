@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plastic Parts for Golf Carts | AdvancTEK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ========== RESET & BASE ========== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #132454;
+    background: #fff;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  /* ========== BRAND TOKENS ========== */
+  :root {
+    --navy: #132454;
+    --navy-dark: #0c1836;
+    --blue: #009ce6;
+    --red: #e33d24;
+    --red-hover: #c7311c;
+    --cream: #f5efe0;
+    --gray-light: #f4f4f4;
+    --gray-med: #6d6d6d;
+    --white: #ffffff;
+    --shadow: 0 3px 15px rgba(69,69,69,.15);
+    --shadow-lg: 0 6px 24px rgba(0,0,0,.12);
+    --radius: 6px;
+    --max-w: 1200px;
+  }
+
+  /* ========== UTILITY ========== */
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+  /* ========== TOP BAR ========== */
+  .topbar {
+    background: var(--navy);
+    color: rgba(255,255,255,.8);
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  .topbar .container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    align-items: center;
+  }
+  .topbar a { color: rgba(255,255,255,.8); }
+  .topbar a:hover { color: #fff; }
+
+  /* ========== HEADER / NAV ========== */
+  header {
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+  .logo {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -.5px;
+    color: var(--navy);
+  }
+  .logo span { color: var(--red); }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+  }
+  nav a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    transition: color .2s;
+  }
+  nav a:hover { color: var(--blue); }
+  nav .nav-cta {
+    background: var(--red);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background .2s;
+  }
+  nav .nav-cta:hover { background: var(--red-hover); }
+
+  /* ========== BREADCRUMB ========== */
+  .breadcrumb {
+    background: var(--gray-light);
+    padding: 14px 0;
+    font-size: 13px;
+    color: var(--gray-med);
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .breadcrumb a { color: var(--blue); }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb span { margin: 0 6px; }
+
+  /* ========== HERO ========== */
+  .hero {
+    position: relative;
+    background: linear-gradient(135deg, var(--navy) 0%, #1a3272 100%);
+    color: #fff;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(0,156,230,.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to top right, #fff 49.5%, transparent 50%);
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 24px 100px;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 {
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: -.5px;
+  }
+  .hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255,255,255,.85);
+    margin-bottom: 16px;
+  }
+  .hero .btn-primary { margin-top: 12px; }
+  .hero-image {
+    background: rgba(255,255,255,.08);
+    border-radius: 12px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,.1);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-image-placeholder {
+    color: rgba(255,255,255,.35);
+    font-size: 14px;
+    text-align: center;
+    padding: 24px;
+  }
+  .hero-image-placeholder .icon { font-size: 48px; margin-bottom: 12px; display: block; }
+
+  /* ========== BUTTONS ========== */
+  .btn-primary {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background .2s, transform .15s;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover { background: var(--red-hover); transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-block;
+    border: 2px solid var(--navy);
+    color: var(--navy);
+    padding: 12px 28px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all .2s;
+  }
+  .btn-outline:hover {
+    background: var(--navy);
+    color: #fff;
+  }
+
+  /* ========== SECTION UTILITIES ========== */
+  section { padding: 80px 0; }
+  .section-gray { background: var(--gray-light); }
+  .section-cream { background: var(--cream); }
+  .section-navy { background: var(--navy); color: #fff; }
+  .section-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--blue);
+    margin-bottom: 12px;
+  }
+  .section-navy .section-label { color: rgba(255,255,255,.5); }
+  .section-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -.3px;
+  }
+  .section-subtitle {
+    font-size: 18px;
+    color: var(--gray-med);
+    max-width: 680px;
+    line-height: 1.7;
+  }
+  .section-navy .section-subtitle { color: rgba(255,255,255,.7); }
+
+  /* ========== PARTS GRID ========== */
+  .parts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .part-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 36px 28px;
+    box-shadow: var(--shadow);
+    border-top: 3px solid var(--blue);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .part-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  .part-card-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(0,156,230,.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: var(--blue);
+  }
+  .part-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .part-card p {
+    font-size: 15px;
+    color: var(--gray-med);
+    line-height: 1.65;
+  }
+
+  /* ========== PROCESSES ========== */
+  .process-list { margin-top: 48px; }
+  .process-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 32px;
+    align-items: start;
+    padding: 36px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .process-item:first-child { padding-top: 0; }
+  .process-item:last-child { border-bottom: none; }
+  .process-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--navy);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .process-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .process-item h3 a {
+    color: var(--blue);
+    border-bottom: 2px solid transparent;
+    transition: border-color .2s;
+  }
+  .process-item h3 a:hover { border-color: var(--blue); }
+  .process-item p {
+    font-size: 16px;
+    color: var(--gray-med);
+    line-height: 1.7;
+  }
+  .process-tag {
+    display: inline-block;
+    background: rgba(0,156,230,.08);
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    margin-top: 12px;
+  }
+
+  /* ========== MATERIALS ========== */
+  .materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .material-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: var(--radius);
+    transition: background .2s;
+  }
+  .material-item:hover {
+    background: rgba(255,255,255,.1);
+  }
+  .material-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--blue);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+  .material-item strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #fff;
+  }
+  .material-item span {
+    font-size: 14px;
+    color: rgba(255,255,255,.65);
+    line-height: 1.6;
+  }
+
+  /* ========== QUALITY ========== */
+  .certs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .cert-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 36px 32px;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: transform .2s;
+  }
+  .cert-card:hover { transform: translateY(-2px); }
+  .cert-badge {
+    width: 56px;
+    height: 56px;
+    background: var(--navy);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+  }
+  .cert-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .cert-card p {
+    font-size: 15px;
+    color: var(--gray-med);
+    line-height: 1.65;
+  }
+
+  /* ========== WHY PARTNER ========== */
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .partner-card {
+    padding: 36px 28px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: var(--radius);
+    transition: background .2s;
+  }
+  .partner-card:hover { background: rgba(255,255,255,.09); }
+  .partner-card-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(0,156,230,.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .partner-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  .partner-card p {
+    font-size: 15px;
+    color: rgba(255,255,255,.7);
+    line-height: 1.7;
+  }
+
+  /* ========== FAQ ========== */
+  .faq-list {
+    max-width: 840px;
+    margin: 48px auto 0;
+  }
+  .faq-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 24px 48px 24px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    cursor: pointer;
+    position: relative;
+    font-family: inherit;
+    line-height: 1.4;
+  }
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--blue);
+    transition: transform .3s;
+  }
+  .faq-question.active::after {
+    content: '−';
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease, padding .3s ease;
+  }
+  .faq-answer.open {
+    max-height: 400px;
+    padding-bottom: 24px;
+  }
+  .faq-answer p {
+    font-size: 16px;
+    color: var(--gray-med);
+    line-height: 1.7;
+  }
+
+  /* ========== BOTTOM CTA ========== */
+  .cta-bottom {
+    background: linear-gradient(135deg, var(--navy) 0%, #1a3272 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-bottom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom right, #fff 49.5%, transparent 50%);
+  }
+  .cta-bottom .container { position: relative; z-index: 1; }
+  .cta-bottom h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  .cta-bottom p {
+    font-size: 18px;
+    color: rgba(255,255,255,.8);
+    max-width: 620px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+  }
+
+  /* ========== FOOTER ========== */
+  footer {
+    background: var(--navy-dark);
+    color: rgba(255,255,255,.6);
+    padding: 60px 0 32px;
+    font-size: 14px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .footer-brand {
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .footer-brand span { color: var(--red); }
+  footer h4 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  footer ul { list-style: none; }
+  footer ul li { margin-bottom: 10px; }
+  footer ul a:hover { color: #fff; }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px 80px; }
+    .hero-image { height: 260px; }
+    .parts-grid { grid-template-columns: repeat(2, 1fr); }
+    .partner-grid { grid-template-columns: 1fr; }
+    .certs-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .section-title { font-size: 28px; }
+    .parts-grid { grid-template-columns: 1fr; }
+    .process-item { grid-template-columns: 1fr; gap: 16px; }
+    .process-icon { width: 56px; height: 56px; font-size: 24px; }
+    .materials-grid { grid-template-columns: 1fr; }
+    nav ul { gap: 16px; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ========== INLINE FORM ========== */
+  .form-section {
+    background: var(--cream);
+    padding: 64px 0;
+  }
+  .form-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .form-text h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .form-text p {
+    font-size: 17px;
+    color: var(--gray-med);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  .form-text .form-features {
+    list-style: none;
+    margin-top: 24px;
+  }
+  .form-text .form-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    color: var(--navy);
+    font-weight: 500;
+  }
+  .form-text .form-features .check {
+    color: var(--blue);
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .form-card {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    padding: 40px 36px;
+  }
+  .form-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .form-card .form-sub {
+    font-size: 14px;
+    color: var(--gray-med);
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .form-group {
+    margin-bottom: 18px;
+  }
+  .form-group.full {
+    grid-column: 1 / -1;
+  }
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .form-group label .req {
+    color: var(--red);
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    color: var(--navy);
+    background: #fff;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(0,156,230,.1);
+  }
+  .form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+  .form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236d6d6d' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+  .form-submit {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .form-privacy {
+    text-align: center;
+    font-size: 12px;
+    color: var(--gray-med);
+    margin-top: 14px;
+  }
+
+  /* ========== DRAFT NOTICE ========== */
+  .draft-banner {
+    background: #fff3cd;
+    color: #856404;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 2px solid #ffc107;
+  }
+
+  @media (max-width: 1024px) {
+    .form-inner { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .form-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Draft Notice -->
+<div class="draft-banner">DESIGN MOCKUP — Plastic Parts for Golf Carts — advanctek.com/plastic-parts-for-golf-carts/ — For Internal Review Only</div>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container">
+    <a href="#">614.289.5360</a>
+    <a href="#">Careers</a>
+    <a href="#">Locations</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <div class="logo">Advanc<span>TEK</span></div>
+    <nav>
+      <ul>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Markets Served</a></li>
+        <li><a href="#">Processes</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="https://www.advanctek.com/get-a-quote/" class="nav-cta">Get A Quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="https://www.advanctek.com/">Home</a>
+    <span>&rsaquo;</span>
+    <a href="https://www.advanctek.com/specializations/">Specializations</a>
+    <span>&rsaquo;</span>
+    <a href="https://www.advanctek.com/specializations/powersports-recreation/">Powersports &amp; Recreation</a>
+    <span>&rsaquo;</span>
+    Plastic Parts for Golf Carts
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1>Plastic Parts for Golf Carts</h1>
+      <p>The golf cart market is expanding rapidly &mdash; from $16 billion in 2020 to an expected $30 billion &mdash; driven by the rise of planned communities and the need for cost-effective transportation. Whether you're an established OEM or a startup entering the low-speed vehicle space, AdvancTEK manufactures the plastic components your golf cart program demands.</p>
+      <p>We can produce all plastic parts for golf cars, offering injection molding, thermoforming, and compression molding options to match each component's volume, size, and performance requirements. With over 35 years of OEM experience and IATF 16949 certification, we deliver consistent quality from prototype through full-rate production.</p>
+      <a href="https://www.advanctek.com/get-a-quote/" class="btn-primary">GET A QUOTE &raquo;</a>
+    </div>
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        <span class="icon">&#9881;</span>
+        [Hero Image: Golf cart on a planned-community road or manufacturing floor with molded plastic components]
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== INLINE FORM ==================== -->
+<section class="form-section">
+  <div class="container">
+    <div class="form-inner">
+
+      <div class="form-text">
+        <h2>Let's Talk About Your Golf Cart Program</h2>
+        <p>Whether you're developing a new golf cart platform or looking for a better manufacturing partner for an existing program, our team is ready to help. Tell us about your project and a plastics engineer will follow up to discuss your requirements.</p>
+        <ul class="form-features">
+          <li><span class="check">&#10003;</span> Free consultation with a plastics engineer</li>
+          <li><span class="check">&#10003;</span> DFM analysis and material recommendations</li>
+          <li><span class="check">&#10003;</span> Rapid quoting on injection molding, thermoforming, and compression molding</li>
+          <li><span class="check">&#10003;</span> 35+ years of OEM manufacturing experience</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <h3>Get a Quote</h3>
+        <p class="form-sub">Enter your info to book a call with one of our plastic engineers to discuss your next project.</p>
+        <form onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name <span class="req">*</span></label>
+              <input type="text" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name <span class="req">*</span></label>
+              <input type="text" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" placeholder="email@company.com" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Company Name <span class="req">*</span></label>
+              <input type="text" placeholder="Company Name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="(555) 555-5555">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Which process are you interested in?</label>
+            <select>
+              <option value="" disabled selected>Select a process</option>
+              <option>Injection Molding</option>
+              <option>Thermoforming</option>
+              <option>Compression Molding</option>
+              <option>Multiple Processes / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell us about your project</label>
+            <textarea placeholder="Brief description of your parts, volumes, materials, or any other details..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Submit &raquo;</button>
+          <p class="form-privacy">By submitting this form, you agree to our privacy policy.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PARTS WE MANUFACTURE ==================== -->
+<section class="section-gray">
+  <div class="container">
+    <div class="section-label">What We Make</div>
+    <h2 class="section-title">Custom Plastic Components for Golf Cart OEMs</h2>
+    <p class="section-subtitle">AdvancTEK manufactures a full range of interior and exterior plastic components for golf cart and low-speed vehicle programs. Manufacturers focus on cosmetic quality and fit&#8209;and&#8209;finish to appeal to families and planned&#8209;community users, and our tooling and processing expertise delivers parts that meet those expectations.</p>
+
+    <div class="parts-grid">
+
+      <div class="part-card">
+        <div class="part-card-icon">&#9632;</div>
+        <h3>Body Panels &amp; Fenders</h3>
+        <p>Exterior body panels and fender assemblies molded for impact resistance, UV stability, and consistent color match across production runs.</p>
+      </div>
+
+      <div class="part-card">
+        <div class="part-card-icon">&#9641;</div>
+        <h3>Dashboards &amp; Consoles</h3>
+        <p>Interior dash panels and center consoles produced with the surface finish and dimensional accuracy that today's golf carts require, especially as the market trend shows increasing luxury features &mdash; advanced electronics and integrated screens.</p>
+      </div>
+
+      <div class="part-card">
+        <div class="part-card-icon">&#9650;</div>
+        <h3>Roofs &amp; Canopies</h3>
+        <p>Thermoformed canopies and roof assemblies that reduce top&#8209;side weight, which is critical after switching from lead&#8209;acid to lithium batteries. Lighter roof components help manufacturers stay well within the federal LSV limit of 3,000&nbsp;lb.</p>
+      </div>
+
+      <div class="part-card">
+        <div class="part-card-icon">&#9646;</div>
+        <h3>Cargo Boxes &amp; Bed Liners</h3>
+        <p>Durable utility&#8209;bed components built to handle continuous use on golf courses, resorts, and community roads.</p>
+      </div>
+
+      <div class="part-card">
+        <div class="part-card-icon">&#9644;</div>
+        <h3>Seat Components &amp; Hip Restraints</h3>
+        <p>Structural seat backs, bases, and hip restraints molded to balance occupant support with weight reduction goals. Designers use sequential gating and high&#8209;flow materials to achieve one&#8209;pound parts where possible.</p>
+      </div>
+
+      <div class="part-card">
+        <div class="part-card-icon">&#9881;</div>
+        <h3>Brackets, Mounts &amp; Hardware</h3>
+        <p>Injection&#8209;molded brackets and mounting components that provide the strength and repeatability high&#8209;volume assembly lines demand.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROCESSES ==================== -->
+<section>
+  <div class="container">
+    <div class="section-label">How We Make It</div>
+    <h2 class="section-title">Golf Cart Manufacturing Processes</h2>
+    <p class="section-subtitle">AdvancTEK offers multiple plastic manufacturing processes, giving golf cart OEMs the flexibility to match the right process to each part based on annual volume, component size, and cost targets. High&#8209;volume production favors injection molding, while lower volumes benefit from thermoforming or compression molding.</p>
+
+    <div class="process-list">
+
+      <div class="process-item">
+        <div class="process-icon">IM</div>
+        <div>
+          <h3><a href="https://www.advanctek.com/processes/injection-molding/">Injection Molding</a></h3>
+          <p>Our injection molding capacity spans 65T to 3,500T presses, suitable for volumes above 50,000 parts per year. Injection molding offers high tooling cost but fast cycles, making it ideal for brackets, console housings, dashboard components, and other parts produced at scale. For golf cart programs with established demand, injection molding delivers the lowest per&#8209;part cost and tightest tolerances.</p>
+          <span class="process-tag">65T &ndash; 3,500T Capacity</span>
+          <span class="process-tag">50,000+ Parts/Year</span>
+        </div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-icon">TF</div>
+        <div>
+          <h3><a href="https://www.advanctek.com/processes/thermoforming/">Thermoforming</a></h3>
+          <p>Thermoforming &mdash; including vacuum forming, pressure forming, and twin&#8209;sheet forming &mdash; is preferable for runs under 5,000 parts, providing lower upfront tooling cost and adequate quality for large&#8209;format components. We produce thermoformed canopies, roof panels, fenders, and cargo&#8209;bed liners for golf cart and LSV OEMs. Thermoforming also enables us to replace heavy roto&#8209;molded parts, cutting both weight and cost.</p>
+          <span class="process-tag">Under 5,000 Parts</span>
+          <span class="process-tag">Lower Tooling Cost</span>
+        </div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-icon">CM</div>
+        <div>
+          <h3>Compression Molding</h3>
+          <p>For structural and semi&#8209;structural components that require high strength&#8209;to&#8209;weight ratios, compression molding offers an alternative to metal fabrication. This process is well suited for load&#8209;bearing seat components, battery tray enclosures, and reinforced mounting panels where glass&#8209;filled or fiber&#8209;reinforced materials deliver the mechanical performance golf cart applications demand.</p>
+          <span class="process-tag">Structural Parts</span>
+          <span class="process-tag">Fiber Reinforced</span>
+        </div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-icon">FN</div>
+        <div>
+          <h3>Part Decoration &amp; Finishing</h3>
+          <p>Beyond molding, AdvancTEK provides secondary decoration services including painting, hydrographics, and pad printing. Outsourced painted parts add durability but can increase cost &mdash; our in&#8209;house capabilities help keep your program cost&#8209;competitive while delivering the cosmetic quality golf cart buyers expect.</p>
+          <span class="process-tag">Painting</span>
+          <span class="process-tag">Hydrographics</span>
+          <span class="process-tag">Pad Printing</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MATERIALS ==================== -->
+<section class="section-navy">
+  <div class="container">
+    <div class="section-label">Materials</div>
+    <h2 class="section-title" style="color:#fff">Materials Engineered for Outdoor Performance</h2>
+    <p class="section-subtitle">Golf carts spend their entire service life exposed to sun, rain, and temperature swings. AdvancTEK selects and processes materials purpose&#8209;built for these conditions.</p>
+
+    <div class="materials-grid">
+
+      <div class="material-item">
+        <div class="material-dot"></div>
+        <div>
+          <strong>ASA (Acrylonitrile Styrene Acrylate)</strong>
+          <span>UV&#8209;resistant materials like ASA improve durability for sun&#8209;exposed parts, maintaining color and gloss without painting in many applications.</span>
+        </div>
+      </div>
+
+      <div class="material-item">
+        <div class="material-dot"></div>
+        <div>
+          <strong>ABS (Acrylonitrile Butadiene Styrene)</strong>
+          <span>A versatile option for interior components where impact resistance and surface finish are priorities.</span>
+        </div>
+      </div>
+
+      <div class="material-item">
+        <div class="material-dot"></div>
+        <div>
+          <strong>Polypropylene (PP)</strong>
+          <span>Lightweight and chemically resistant, well suited for utility components, cargo beds, and under&#8209;body panels.</span>
+        </div>
+      </div>
+
+      <div class="material-item">
+        <div class="material-dot"></div>
+        <div>
+          <strong>Glass-Filled Nylon (PA)</strong>
+          <span>Delivers the strength, chemical resistance, and durability that structural and load&#8209;bearing golf cart applications demand.</span>
+        </div>
+      </div>
+
+      <div class="material-item">
+        <div class="material-dot"></div>
+        <div>
+          <strong>TPO (Thermoplastic Olefin)</strong>
+          <span>Impact&#8209;resistant and paintable, commonly used for exterior body panels and fenders requiring Class&#8209;A surfaces.</span>
+        </div>
+      </div>
+
+      <div class="material-item">
+        <div class="material-dot"></div>
+        <div>
+          <strong>PC &amp; PC/ABS Blends</strong>
+          <span>High clarity and impact strength for windshield surrounds, light lenses, and instrument panel components.</span>
+        </div>
+      </div>
+
+      <div class="material-item">
+        <div class="material-dot"></div>
+        <div>
+          <strong>High-Flow Specialty Resins</strong>
+          <span>For thin&#8209;wall applications, we process high&#8209;flow materials that allow designers to achieve aggressive weight targets without sacrificing part integrity.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="margin-top:32px; font-size:15px; color:rgba(255,255,255,.6); max-width:680px;">Our materials engineering team works with your design group to match the right resin to each component's UV exposure, structural loading, temperature range, and cosmetic requirements.</p>
+  </div>
+</section>
+
+<!-- ==================== QUALITY & CERTIFICATIONS ==================== -->
+<section class="section-gray">
+  <div class="container">
+    <div class="section-label">Quality</div>
+    <h2 class="section-title">Quality Systems Built for OEM Programs</h2>
+    <p class="section-subtitle">AdvancTEK maintains the quality certifications and systems that golf cart and low&#8209;speed vehicle OEMs require.</p>
+
+    <div class="certs-grid">
+
+      <div class="cert-card">
+        <div class="cert-badge">&#10003;</div>
+        <div>
+          <h3>IATF 16949 Certified</h3>
+          <p>Our quality management system meets the automotive industry's most rigorous standard, ensuring process control, traceability, and continuous improvement across every production run.</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-badge">&#9672;</div>
+        <div>
+          <h3>ISO 14001 Certified</h3>
+          <p>Our environmental management system demonstrates our commitment to sustainable manufacturing practices &mdash; an increasingly important consideration as the golf cart industry shifts toward electric, lithium&#8209;powered platforms.</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-badge">&#8984;</div>
+        <div>
+          <h3>Full Traceability</h3>
+          <p>Custom molders provide design support, tooling, and traceability for OEMs. Every part is traceable from raw material through final shipment.</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-badge">&#9881;</div>
+        <div>
+          <h3>PPAP &amp; APQP Support</h3>
+          <p>We support full production part approval and advanced quality planning processes to ensure your components meet specification from first article through ongoing production.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY PARTNER ==================== -->
+<section class="section-navy">
+  <div class="container">
+    <div class="section-label">Why AdvancTEK</div>
+    <h2 class="section-title" style="color:#fff">A Manufacturing Partner from Design to Delivery</h2>
+    <p class="section-subtitle">The golf cart and low&#8209;speed vehicle market is fiercely competitive, with well&#8209;established industry leaders and a growing wave of new entrants all vying for market share. Whether you're scaling an existing brand or launching a new platform, AdvancTEK gives you the manufacturing backbone to differentiate your product and get to market faster.</p>
+
+    <div class="partner-grid">
+
+      <div class="partner-card">
+        <div class="partner-card-icon">&#127758;</div>
+        <h3>Multi-Facility Capacity — U.S. &amp; Mexico</h3>
+        <p>With production facilities in both the U.S. and Mexico, AdvancTEK helps golf cart manufacturers reduce freight costs on large exterior components while maintaining the quality standards our IATF 16949 certification guarantees. Our combined capacity handles everything from prototype tooling through full&#8209;rate production across multiple processes.</p>
+      </div>
+
+      <div class="partner-card">
+        <div class="partner-card-icon">&#9998;</div>
+        <h3>Design-to-Production Support</h3>
+        <p>Distributors offer limited options, while custom molders enable product differentiation. Our <a href="https://www.advanctek.com/services/design-development/" style="color:var(--blue);">design and development</a> team provides DFM analysis, material selection guidance, mold flow simulation, and tooling design &mdash; giving startups and established OEMs alike the engineering support to bring new platforms to market.</p>
+      </div>
+
+      <div class="partner-card">
+        <div class="partner-card-icon">&#9733;</div>
+        <h3>Value-Added Services</h3>
+        <p>AdvancTEK consolidates your supply chain with secondary services including assembly, painting, hydrographics, pad printing, sonic welding, and kitting. Fewer suppliers means lower coordination cost and faster time to market &mdash; critical in a segment where many manufacturers import kits from Asia, assemble them in the U.S., and customize branding and paint.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section>
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title" style="text-align:center">Golf Cart Plastic Parts FAQ</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question active" onclick="toggleFaq(this)">What types of plastic parts can AdvancTEK manufacture for golf carts?</button>
+        <div class="faq-answer open">
+          <p>We manufacture the full range of plastic components for golf cart and low&#8209;speed vehicle programs, including body panels, fenders, dashboards, consoles, roofs and canopies, cargo boxes, seat components, hip restraints, brackets, and structural mounting hardware. We can produce all plastic parts for golf cars using injection molding, thermoforming, or compression molding, depending on your volume and application requirements.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Which manufacturing process is right for my golf cart parts?</button>
+        <div class="faq-answer">
+          <p>The best process depends on your annual volume and part geometry. Injection molding is suitable for volumes above 50,000 parts and delivers the fastest cycles and lowest per&#8209;part cost. Thermoforming is preferable for runs under 5,000 parts, providing lower upfront cost and adequate quality for large&#8209;format components like roofs and fenders. Compression molding is ideal for structural parts requiring reinforced materials. Our team can recommend the right process for each component in your program.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What materials work best for golf cart components exposed to the elements?</button>
+        <div class="faq-answer">
+          <p>UV&#8209;resistant materials like ASA improve durability for sun&#8209;exposed parts and maintain color without painting. For structural components, glass&#8209;filled nylon delivers the strength, chemical resistance, and durability these applications demand. We also process polypropylene, TPO, ABS, and polycarbonate blends &mdash; and our materials engineering team will help match the right resin to each part's performance and cosmetic requirements.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Can AdvancTEK support a new golf cart startup from the ground up?</button>
+        <div class="faq-answer">
+          <p>Yes. We provide design&#8209;to&#8209;production support including DFM analysis, material selection, mold flow simulation, tooling design, and PPAP documentation. Custom molders provide design support, tooling, and traceability for OEMs &mdash; capabilities that distributors can't match. Whether you're launching a new platform or scaling an existing one, our team partners with you from concept through full&#8209;rate production.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BOTTOM CTA ==================== -->
+<section class="cta-bottom">
+  <div class="container">
+    <h2>Find a Way with AdvancTEK</h2>
+    <p>The golf cart market continues to grow as communities expand and residents seek convenient, low&#8209;cost transport for local errands. Schedule a meeting today to learn how AdvancTEK can help you manufacture the plastic components your golf cart program requires.</p>
+    <a href="https://www.advanctek.com/get-a-quote/" class="btn-primary">BOOK AN APPOINTMENT &raquo;</a>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Advanc<span>TEK</span></div>
+        <p style="max-width:300px; line-height:1.7;">Custom plastic manufacturing solutions with 35+ years of OEM experience. Facilities in the United States and Mexico.</p>
+        <p style="margin-top:16px;">614.289.5360</p>
+      </div>
+      <div>
+        <h4>Processes</h4>
+        <ul>
+          <li><a href="https://www.advanctek.com/processes/injection-molding/">Injection Molding</a></li>
+          <li><a href="https://www.advanctek.com/processes/thermoforming/">Thermoforming</a></li>
+          <li><a href="https://www.advanctek.com/processes/reaction-injection-molding/">Reaction Injection Molding</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Markets</h4>
+        <ul>
+          <li><a href="https://www.advanctek.com/specializations/powersports-recreation/">Powersports &amp; Recreation</a></li>
+          <li><a href="https://www.advanctek.com/specializations/construction-and-agriculture/">Construction &amp; Agriculture</a></li>
+          <li><a href="https://www.advanctek.com/specializations/industrial/">Industrial</a></li>
+          <li><a href="https://www.advanctek.com/specializations/telecommunications/">Telecommunications</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://www.advanctek.com/who-we-are/">Who We Are</a></li>
+          <li><a href="https://www.advanctek.com/our-locations/">Locations</a></li>
+          <li><a href="https://www.advanctek.com/contact/">Contact</a></li>
+          <li><a href="https://www.advanctek.com/get-a-quote/">Get A Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 AdvancTEK. All rights reserved. &nbsp;|&nbsp; This is a design mockup for internal review.
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = answer.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+  document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+  // Toggle clicked
+  if (!isOpen) {
+    answer.classList.add('open');
+    btn.classList.add('active');
+  }
+}
+</script>
+
+</body>
+</html>
