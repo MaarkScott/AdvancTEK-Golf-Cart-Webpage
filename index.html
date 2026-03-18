@@ -153,20 +153,80 @@
     position: relative;
     z-index: 1;
   }
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: rgba(255,255,255,.5);
+    margin-bottom: 16px;
+  }
   .hero h1 {
     font-size: 44px;
     font-weight: 800;
     line-height: 1.15;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     letter-spacing: -.5px;
   }
-  .hero p {
-    font-size: 17px;
-    line-height: 1.7;
-    color: rgba(255,255,255,.85);
-    margin-bottom: 16px;
+  .hero-byline {
+    font-size: 19px;
+    line-height: 1.6;
+    color: rgba(255,255,255,.8);
+    margin-bottom: 28px;
+    max-width: 520px;
   }
-  .hero .btn-primary { margin-top: 12px; }
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+  }
+  .btn-white-outline {
+    display: inline-block;
+    border: 2px solid rgba(255,255,255,.4);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all .2s;
+  }
+  .btn-white-outline:hover {
+    background: rgba(255,255,255,.1);
+    border-color: rgba(255,255,255,.7);
+  }
+  .hero-proof {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .hero-proof-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255,255,255,.6);
+    font-weight: 500;
+  }
+  .hero-proof-item .proof-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(0,156,230,.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--blue);
+    flex-shrink: 0;
+  }
+  .hero-proof-item strong {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+  }
   .hero-image {
     background: rgba(255,255,255,.08);
     border-radius: 12px;
@@ -790,10 +850,27 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-content">
+      <div class="hero-eyebrow">Powersports &amp; Recreation</div>
       <h1>Plastic Parts for Golf Carts</h1>
-      <p>The golf cart market is expanding rapidly &mdash; from $16 billion in 2020 to an expected $30 billion &mdash; driven by the rise of planned communities and the need for cost-effective transportation. Whether you're an established OEM or a startup entering the low-speed vehicle space, AdvancTEK manufactures the plastic components your golf cart program demands.</p>
-      <p>We can produce all plastic parts for golf cars, offering injection molding, thermoforming, and compression molding options to match each component's volume, size, and performance requirements. With over 35 years of OEM experience and IATF 16949 certification, we deliver consistent quality from prototype through full-rate production.</p>
-      <a href="https://www.advanctek.com/get-a-quote/" class="btn-primary">GET A QUOTE &raquo;</a>
+      <p class="hero-byline">Custom injection molded, thermoformed, and compression molded components for golf cart and low&#8209;speed vehicle OEMs.</p>
+      <div class="hero-ctas">
+        <a href="https://www.advanctek.com/get-a-quote/" class="btn-primary">GET A QUOTE &raquo;</a>
+        <a href="#form-section" class="btn-white-outline">Talk to an Engineer</a>
+      </div>
+      <div class="hero-proof">
+        <div class="hero-proof-item">
+          <div class="proof-icon">&#10003;</div>
+          <div><strong>IATF 16949</strong>Certified Quality</div>
+        </div>
+        <div class="hero-proof-item">
+          <div class="proof-icon">&#9881;</div>
+          <div><strong>35+ Years</strong>OEM Experience</div>
+        </div>
+        <div class="hero-proof-item">
+          <div class="proof-icon">&#127758;</div>
+          <div><strong>U.S. &amp; Mexico</strong>Production Facilities</div>
+        </div>
+      </div>
     </div>
     <div class="hero-image">
       <div class="hero-image-placeholder">
@@ -804,20 +881,15 @@
   </div>
 </section>
 
-<!-- ==================== INLINE FORM ==================== -->
-<section class="form-section">
+<!-- ==================== INTRO + FORM ==================== -->
+<section class="form-section" id="form-section">
   <div class="container">
     <div class="form-inner">
 
       <div class="form-text">
-        <h2>Let's Talk About Your Golf Cart Program</h2>
-        <p>Whether you're developing a new golf cart platform or looking for a better manufacturing partner for an existing program, our team is ready to help. Tell us about your project and a plastics engineer will follow up to discuss your requirements.</p>
-        <ul class="form-features">
-          <li><span class="check">&#10003;</span> Free consultation with a plastics engineer</li>
-          <li><span class="check">&#10003;</span> DFM analysis and material recommendations</li>
-          <li><span class="check">&#10003;</span> Rapid quoting on injection molding, thermoforming, and compression molding</li>
-          <li><span class="check">&#10003;</span> 35+ years of OEM manufacturing experience</li>
-        </ul>
+        <h2>Golf Cart Plastic Manufacturing</h2>
+        <p>The golf cart market is expanding rapidly &mdash; from $16 billion in 2020 to an expected $30 billion &mdash; driven by the rise of planned communities and the need for cost-effective transportation. Whether you're an established OEM or a startup entering the low&#8209;speed vehicle space, AdvancTEK manufactures the plastic components your golf cart program demands.</p>
+        <p>We can produce all plastic parts for golf cars, offering injection molding, thermoforming, and compression molding options to match each component's volume, size, and performance requirements. With over 35 years of OEM experience and IATF 16949 certification, we deliver consistent quality from prototype through full&#8209;rate production.</p>
       </div>
 
       <div class="form-card">
